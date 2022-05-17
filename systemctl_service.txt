@@ -1,0 +1,2 @@
+ystemctl service : start restart reload enable is-active is-enabled status
+systemctl service for shell script : is-active is-enabled
