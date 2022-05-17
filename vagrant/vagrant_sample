@@ -1,0 +1,42 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.define "web-server"
+  config.vm.hostname = "web-server"
+  config.vm.box = "centos/7"
+
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  # config.vm.box_check_update = false
+
+  config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  # config.vm.network "private_network", ip: "192.168.33.10"
+
+  # Argument 1: the path on the host to the actual folder.
+  # Argument 2: the path on the guest to mount the folder.
+  config.vm.synced_folder "./html/", "/var/www/html/"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "web-server"
+    vb.gui = false
+    vb.memory = "2048"
+  end
+
+  # If the boot process is too long uncomment the line below :
+  # config.vm.boot_timeout=600
+
+  config.vm.provision "shell", inline: <<-SHELL
+    yum update
+    yum install -y httpd
+  SHELL
+
+  config.vm.provision "shell", run: "always", inline: <<-SHELL
+    echo "Hello Bro, wish you the best !!!"
+  SHELL
+
+end

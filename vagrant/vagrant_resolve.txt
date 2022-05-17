@@ -1,0 +1,14 @@
+Issue found with share folders set up between the host and the guest
+ -> vagrant plugin install vagrant-vbguest
+ -> vagrant up
+
+New issue found for the mount set up (hostname not defined as the Vagrantfile)
+ -> vagrant ssh
+
+ --> Terminal CentOS (apt-get for Ubuntu)
+ 	> sudo yum -y install kernel-devel
+ 	> sudo yum update -y
+ 	> exit
+
+ -> vagrant halt
+ -> vagrant up --provision
