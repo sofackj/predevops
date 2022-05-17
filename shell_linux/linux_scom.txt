@@ -1,0 +1,4 @@
+
+Color for echo command : echo -e "\033[0;32m hello \033[0;31m hello \033[0;0m"
+Color comments : need to close with no color to avoid coloring the rest of the shell
+Color comments : option -e mandatory and spaces are not necessary
