@@ -1,0 +1,1 @@
+Remove ask password for a service : e.g. Docker --> gpasswd -a $USER docker

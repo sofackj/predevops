@@ -1,0 +1,4 @@
+ansible .txt file : target1 ansible_host=192.168.1.37 ansible_ssh_pass=julien123
+ansible command for checking : ansible target1 -m ping -i test-project/inventory.txt
+ansible issue if no precedent ssh (not recommended) : /etc/ansible/ansible.cfg
+ansible issue if no precedent ssh (not recommended) : uncomment "host_key_checking = False" line

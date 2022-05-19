@@ -1,7 +1,0 @@
-Code corrector : shellcheck (install with yum or apt)
-Structure function : function function_name() {}
-structure if statement : if [condition] \n then \n\t code <\t\n fi
-Structure while statement : while [condition] \n do \n\t code \n<\t done
-Structure for statement : for var_name in list \n do \n\t code \n<\t done
-Key list in for statement : <<A B ...>> or $(ls folder_path or cat file_path.txt)
-Structure case statement : case expression in \n\t expression_value) code ;; \n<\t esac

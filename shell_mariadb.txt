@@ -1,3 +1,0 @@
-Inject mysql command to db interface : use .sql file with command written (1 command per line)
-Inject mysql command to db interface : file_name.sql <<-EOF \n\t <<command>>; \n<\t EOF
-mysql command from the shell : sudo mysql -e "<<command>>;<<command>>;"
