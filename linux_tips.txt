@@ -1,1 +1,3 @@
 Remove ask password for a service : e.g. Docker --> gpasswd -a $USER docker
+Ubuntu VM : for ssh connection, enable it with apt update
+Ubuntu VM : then after update use sudo apt install openssh-server
