@@ -1,0 +1,9 @@
+Display Jenkins CLI : java -jar jenkins-cli.jar -s http://192.168.1.49:8080/ -auth moi:114efb75da16dffb362d641d8b35430ffb
+SSH service for used port : curl -Lv http://localhost:8085/login 2>&1 | grep -i 'x-ssh-endpoint'
+SSH sevice connection : ssh -i /home/mike/.ssh/jenkins_key -l mike -p 8022 jenkins-server help
+SSH service connection : -i -> private key -l -> login user
+Jenkins CLI java command : java -jar jenkins-cli.jar -s http://localhost:8085 -auth 'admin:Adm!n321' <command>
+Plugin to install : Role-based Authorization Strategy
+Plugin to install : Matrix Authorization Strategy Plugin
+Plugin to install : Backup
+Plugin to install : Thin Backup

@@ -1,2 +1,2 @@
-Display URL service of the pod : minikube service <name of the pod> --url
-Display pods : kubectl get pods
+Display URL of the service : minikube service <service-name> --url
+Display service : kubectl get svc
