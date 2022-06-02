@@ -1,3 +1,8 @@
 Remove ask password for a service : e.g. Docker --> gpasswd -a $USER docker
 Ubuntu VM : for ssh connection, enable it with apt update
 Ubuntu VM : then after update use sudo apt install openssh-server
+
+Execute command after find : find <path-to-check> <criteria> -exec <command> {} <args> \;
+Execute command after find : find my-path/ -user <username> -exec cp {} final-path/ \;
+Execute command after find : {} -> represents args for next command execution
+Command copy : option --parents -> copy files with parents folder

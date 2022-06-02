@@ -7,3 +7,4 @@ Plugin to install : Role-based Authorization Strategy
 Plugin to install : Matrix Authorization Strategy Plugin
 Plugin to install : Backup
 Plugin to install : Thin Backup
+Change Port number : cat /etc/default/jenkins | grep HTTP_PORT
