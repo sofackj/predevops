@@ -13,5 +13,16 @@ pipeline {
                 sh 'go test ./...'
             }
         }
+        stage('build') {
+            steps {
+                git 'https://github.com/sofackj/go-webapp-sample.git'
+                sh 'go build .'
+            }
+        }
+        stage('un') {
+            steps {
+                sh 'go test ./...'
+            }
+        }
     }
 }

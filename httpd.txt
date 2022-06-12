@@ -1,0 +1,2 @@
+Tips set header harden security :centos : https://devops.ionos.com/tutorials/how-to-harden-the-apache-web-server-on-centos-7.html
+Tips set header harden security ubuntu : https://techexpert.tips/apache/apache-add-header/
