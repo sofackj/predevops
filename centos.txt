@@ -1,0 +1,11 @@
+yum create yum repository : mkdir /path-to-rpms-repository
+yum create yum repository : copy rpm packages to /path-to-rpms-repository
+yum create yum repository : yum install createrepo
+yum create yum repository : chown and chmod set up (chmod o+w)
+yum create yum repository : createrepo /path-to-repository
+yum create yum repo file : vi /etc/yum.repos.d/myrepo.repo
+yum create yum repo file : [myrepo]
+yum create yum repo file : name=myrepo
+yum create yum repo file : baseurl=file:///path-to-rpms-repository
+yum create yum repo file : enabled=1
+yum create yum repo file : gpgcheck=0
