@@ -12,3 +12,6 @@ Change banner before ssh succesful login : reload ssh(ubuntu)/sshd(CentOS) servi
 Change banner after succesful login : Put the content in the /etc/motd file
 Enable scp command : with yum/apt --> openssh-clients/openssh-client
 Details of package with yum : example --> yum provides /etc/selinux/config
+Network setup netplan : /etc/netplan/
+Network setup netplan : vi *.yaml
+Network setup nmtui : sudo nmtui
