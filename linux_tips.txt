@@ -15,3 +15,5 @@ Details of package with yum : example --> yum provides /etc/selinux/config
 Network setup netplan : /etc/netplan/
 Network setup netplan : vi *.yaml
 Network setup nmtui : sudo nmtui
+Network setup files system : /etc/sysconfig/network-scripts/{the interface you want}
+Network setup files system : vi {the interface you want} IPADDR(if static) GATEwAY DNS PREFIX(/00)
