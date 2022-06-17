@@ -17,3 +17,6 @@ Network setup netplan : vi *.yaml
 Network setup nmtui : sudo nmtui
 Network setup files system : /etc/sysconfig/network-scripts/{the interface you want}
 Network setup files system : vi {the interface you want} IPADDR(if static) GATEwAY DNS PREFIX(/00)
+Route iptables permanent rules (CentOs) : yum install iptables-services
+Route iptables permanent rules (CentOs) : service iptables save
+Route iptables permanent rules (CentOs) : systemctl enable iptables
