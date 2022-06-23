@@ -9,3 +9,5 @@ yum create yum repo file : name=myrepo
 yum create yum repo file : baseurl=file:///path-to-rpms-repository
 yum create yum repo file : enabled=1
 yum create yum repo file : gpgcheck=0
+Firewall iptables permanent save : iptables-save > /etc/sysconfig/iptables (root mode)
+Firewall iptables permanent save : service iptables save (root mode)
